@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Progress-Reports on Movie App</title>
+    <link>http://localhost:1313/progress-reports/</link>
+    <description>Recent content in Progress-Reports on Movie App</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/progress-reports/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Calendar Plan</title>
+      <link>http://localhost:1313/progress-reports/calendar-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/progress-reports/calendar-plan/</guid>
+      <description>&lt;h1 id=&#34;feature-1---login-authentication&#34;&gt;Feature 1 - Login Authentication&lt;/h1&gt;&#xA;&lt;h2 id=&#34;date-0922---0926&#34;&gt;Date: 09/22 - 09/26&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirements 1&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create simple login page&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirement 2&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create a deeplink that redirects to the tmdb website sign up page&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirement 3&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Send email and password to API and then response store session token&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirement 4&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Add testing for login (ViewModel)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;feature-2---uiux-design&#34;&gt;Feature 2 - UI/UX Design&lt;/h1&gt;&#xA;&lt;h2 id=&#34;plan--0922---0926&#34;&gt;Plan:  09/22 - 09/26&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirements 1&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create design for pages (E.g figma)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Requirements 2&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create a mockup design of the login page and home screen page&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;feature-3---ratingscoring-detail-page&#34;&gt;Feature 3 - Rating/Scoring (Detail page)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;plan--0929---1003&#34;&gt;Plan:  09/29 - 10/03&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirement 1&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HW2 – Grading Rubric (Team Project)</title>
+      <link>http://localhost:1313/progress-reports/report_week1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/progress-reports/report_week1/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Movie App</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Movie App</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/documentation/howtorun/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/documentation/howtorun/</guid>
+      <description>&lt;h1 id=&#34;how-to-run-the-app&#34;&gt;How to Run the app&lt;/h1&gt;&#xA;&lt;h2 id=&#34;instructions-to-run-the-app&#34;&gt;Instructions to run the app&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Run in terminal&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flutter pub get&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;At the root of the project create a file called  &lt;code&gt;.env&lt;/code&gt; and add your API KEY&#xA;API_KEY=api_key=YOUR API KEY&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
+    </item>
+    <item>
+      <title>Calendar Plan</title>
+      <link>http://localhost:1313/progress-reports/calendar-plan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/progress-reports/calendar-plan/</guid>
+      <description>&lt;h1 id=&#34;feature-1---login-authentication&#34;&gt;Feature 1 - Login Authentication&lt;/h1&gt;&#xA;&lt;h2 id=&#34;date-0922---0926&#34;&gt;Date: 09/22 - 09/26&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirements 1&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create simple login page&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirement 2&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create a deeplink that redirects to the tmdb website sign up page&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirement 3&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Send email and password to API and then response store session token&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirement 4&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Add testing for login (ViewModel)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;feature-2---uiux-design&#34;&gt;Feature 2 - UI/UX Design&lt;/h1&gt;&#xA;&lt;h2 id=&#34;plan--0922---0926&#34;&gt;Plan:  09/22 - 09/26&lt;/h2&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirements 1&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create design for pages (E.g figma)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Requirements 2&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Create a mockup design of the login page and home screen page&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;feature-3---ratingscoring-detail-page&#34;&gt;Feature 3 - Rating/Scoring (Detail page)&lt;/h1&gt;&#xA;&lt;h2 id=&#34;plan--0929---1003&#34;&gt;Plan:  09/29 - 10/03&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Requirement 1&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Documentation</title>
+      <link>http://localhost:1313/documentation/architecture/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/documentation/architecture/</guid>
+      <description>&lt;h1 id=&#34;app-architecture&#34;&gt;App Architecture&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/software-architecture.png&#34; alt=&#34;App Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;We will grab all our movie data in the &lt;a href=&#34;https://developer.themoviedb.org/docs/getting-started&#34;&gt;Tmdb API&lt;/a&gt;. The API already offers login and this means users has the ability to add, remove, update, and rate movies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;app-design-pattern-mvvm&#34;&gt;App Design Pattern (MVVM)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://journaldev.nyc3.cdn.digitaloceanspaces.com/2018/04/android-mvvm-pattern.png&#34; alt=&#34;MVVM&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;We are going to use MVVM Design pattern to make it easier for collaborations, scalable, and testing.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I will create another tutorial file on how everything works with the codebase&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>HW2 – Grading Rubric (Team Project)</title>
+      <link>http://localhost:1313/progress-reports/report_week1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/progress-reports/report_week1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>User Manual</title>
+      <link>http://localhost:1313/user-manul/user-manual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/user-manul/user-manual/</guid>
+      <description>&lt;h1 id=&#34;user-manual&#34;&gt;User Manual&lt;/h1&gt;</description>
+    </item>
+  </channel>
+</rss>

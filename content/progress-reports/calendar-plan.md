@@ -3,101 +3,98 @@ menus = 'main'
 title = 'Calendar Plan'
 +++
 
-# Feature 1 - Login Authentication
-## Date: 09/22 - 09/26
----
-**Requirements 1**
-  - Create simple login page
+# 🎬 TMDB Movie App Development Plan
 
-**Requirement 2**
-  - Create a deeplink that redirects to the tmdb website sign up page
-  
-**Requirement 3**
-  - Send email and password to API and then response store session token
-  
-**Requirement 4**
-  - Add testing for login (ViewModel)
----
-# Feature 2 - UI/UX Design
-## Plan:  09/22 - 09/26
+## Weekly Feature Breakdown
+Team: Preston, Cambden, Aj
 
 ---
 
-**Requirements 1**
-  - Create design for pages (E.g figma)
-  
-Requirements 2
-  - Create a mockup design of the login page and home screen page
+# 🗓️ Week 2
 
----
-# Feature 3 - Rating/Scoring (Detail page)
-## Plan:  09/29 - 10/03
+### 🔐 Login (Preston) ✅ *Completed*
+- The system must allow login via **email/password**.
+- The system must force users to **register with TMDB**.
+- The system must provide **“forgot password”** functionality (redirect to TMDB).
 
-**Requirement 1**
-  - Design UI for the Detail page
-
-**Requirement 2** 
-  - Call API to get list of comments of a specific movie
-
-**Requirement 3** 
-  - Able to rate and stars with a button
-
-**Requirement 4**
-  - Add testing(ViewModel)
-
----
-# Feature 4 - Comments
-## Plan:  09/29 - 10/03
----
-**Requirement 1** 
-  - Design UI
-
-**Requirement 2**
-  - Able to add comments in a series
-  - Call API to get list of comments of a specific movie
-
-**Requirement 3**
-  - Add testing for login (ViewModel)
-
-
----
-# Feature 5 - Lists (HomeScreen)
-## Plan:  10/06 - 10/10
----
-**Requirement 1** 
-- Improve UI design of Lists
-
----
-# Feature 6 - Recommendataion
-## Plan:  10/06 - 10/10
----
-**Requirement 1** 
-- Call the list of recommendation for Recommendation Page
-
-**Requirement 2**
-- Add testing(ViewModel)
----
-
----
-# Feature 7 - Profile Page
-## Plan:  10/13 - 10/17
----
-**Requirement 1**
-- Create Basic UI 
-
-**Requirement 2**
-  - Add testing(ViewModel)
+### 🎨 Design (Cambden)
+- Design the **login page** UI.
 
 ---
 
-# Feature 8 - Sorting Filtering
-## Plan:  10/13 - 10/17
----
-**Requirement 1** 
-- Follow UI
+# 🗓️ Week 3
 
-**Requirement 2**
-  - Add testing(ViewModel)
+### 🔐 Login (Preston) ✅ *Completed*
+- The system must allow login via **email/password**.
+- The system must force users to **register with TMDB**.
+- The system must provide **“forgot password”** functionality (redirect to TMDB).
+
+### 🎬 Detail Pages (Cambden)
+- Display **title, release date, and synopsis**.
+- Show **cast, crew, and production details**.
+- Display **similar/related movies**.
+- Allow user to **add movie to list**.
+
+---
+
+# 🗓️ Week 4
+
+### ⭐ Ratings (Cambden) 🚧 *Incomplete*
+- Users can **rate movies (1–10 scale)**.
+- Ratings must be **editable/removable**.
+- User ratings must be **aggregated into an average score**.
+
+### 💬 Reviews (Aj) ✅ *Completed*
+- Users can **read reviews**.
+- Reviews show **username, timestamp, and rating**.
+- Reviews can be **sorted** (newest, highest rated).
+
+---
+
+# 🗓️ Week 5
+
+### 🎬 Detail Pages (Cambden)
+- Display **title, release date, synopsis**.
+- Show **cast, crew, and production details**.
+- Display **similar/related movies**.
+- Allow user to **add movie to list**.
+
+### ⭐ Ratings (Cambden)
+- Users can **rate movies (1–10 scale)**.
+- Ratings must be **editable/removable**.
+- Ratings are **averaged** for a total score.
+
+---
+
+# 🗓️ Week 6
+
+### 👤 Profiles
+- Users can **create and edit** a profile.
+- Display **watchlist, favorites, and reviews**.
+- Allow **light/dark mode** settings.
+- Users can **log out from all devices**.
+
+### 🔍 Search / Filter
+- Search by **title, keyword, or cast**.
+- Filter by **genre, year, rating, and country**.
+- **Dynamic search** updates results as user types.
+- **Clear filters** to reset default view.
+- Show **recommendations while searching**.
+
+---
+
+# 🗓️ Week 7
+
+### 🎥 Watchlist
+- Add/remove movies to **watchlist**.
+- Mark movies as **favorites**.
+- Lists display in **chronological order**.
+- Lists are **editable** (remove or reorder items).
+
+### 🤖 Recommendations
+- Generate recommendations based on **ratings and watchlist**.
+- Recommendations **update dynamically** after list changes.
+- Show **at least 10 suggested movies/TV shows**.
 
 ---
 

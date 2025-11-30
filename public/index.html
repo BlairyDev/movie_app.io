@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=38355&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
@@ -37,10 +37,10 @@
     
 
     
-      <link rel="canonical" href="http://localhost:1313/">
+      <link rel="canonical" href="http://localhost:38355/">
     
 
-    <meta property="og:url" content="http://localhost:1313/">
+    <meta property="og:url" content="http://localhost:38355/">
   <meta property="og:site_name" content="Movie App">
   <meta property="og:title" content="Movie App">
   <meta property="og:locale" content="en_us">
@@ -141,91 +141,25 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/progress-reports/calendar-plan/" class="color-inherit dim link">
+          <a href="/documentation/howtorun/" class="color-inherit dim link">
             
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <h1 id="team-project--feature-timeline">Team Project – Feature Timeline</h1>
-<h2 id="week-2">Week 2</h2>
-<h3 id="login">Login</h3>
-<ul>
-<li>The system must allow login via email/password.</li>
-<li>The system must force user to register with TMDB.</li>
-<li>The system must provide “forgot password” functionality (redirect to TMDB).</li>
-<li>Design login page (Cambden).</li>
-</ul>
-<hr>
-<h2 id="week-3">Week 3</h2>
-<h3 id="login-preston--completed">Login (Preston) – Completed</h3>
-<ul>
-<li>The system must allow login via email/password.</li>
-<li>The system must force user to register with TMDB.</li>
-<li>The system must provide “forgot password” functionality (redirect to TMDB).</li>
-<li>Design login page (Cambden).</li>
-</ul>
-<h3 id="detail-pages-next-week--cambden">Detail Pages (next week) – Cambden</h3>
-<ul>
-<li>Detail pages must display title, release date, synopsis.</li>
-<li>Must be able to add/remove movie to watchlist and favorites.</li>
-</ul>
-<hr>
-<h2 id="week-4">Week 4</h2>
-<h3 id="ratings">Ratings</h3>
-<ul>
-<li>Users must be able to rate movies on a 1–10 scale.</li>
-<li>Ratings must be editable or removable by the user.</li>
-<li>User ratings must be aggregated into an average score.</li>
-</ul>
-<h3 id="reviews-aj--completed">Reviews (AJ) – Completed</h3>
-<ul>
-<li>Users must be able to read reviews.</li>
-<li>Reviews must display username, timestamp, and rating (if provided).</li>
-<li>Reviews must be sortable (newest, highest rated).</li>
-</ul>
-<hr>
-<h2 id="week-5">Week 5</h2>
-<h3 id="detail-pages">Detail Pages</h3>
-<ul>
-<li>Detail pages must display title, release date, synopsis.</li>
-<li>Must be able to add and remove movies from watchlist and favorites.</li>
-</ul>
-<h3 id="profiles">Profiles</h3>
-<ul>
-<li>Profiles must display a watchlist and favorites.</li>
-<li>Users must be able to log out.</li>
-</ul>
-<hr>
-<h2 id="week-6">Week 6</h2>
-<h3 id="searchfilter">Search/Filter</h3>
-<ul>
-<li>Users must be able to search movies/TV shows by title, keyword, or cast.</li>
-<li>Filters must support genre, year, rating, and country.</li>
-<li>Search results must update dynamically as the user types.</li>
-<li>Users must be able to clear filters and reset to default view.</li>
-</ul>
-<h3 id="watchlist">Watchlist</h3>
-<ul>
-<li>Users must be able to add/remove movies to their watchlist.</li>
-<li>Users must be able to mark movies as favorites.</li>
-</ul>
-<hr>
-<h2 id="week-7">Week 7</h2>
-<h3 id="ratings-1">Ratings</h3>
-<ul>
-<li>Users must be able to rate movies on a 1–10 scale.</li>
-<li>Ratings must be able to add and remove.</li>
-</ul>
-<h3 id="recommendations">Recommendations</h3>
-<ul>
-<li>Recommendations must display at least 10 suggested movies/TV shows.</li>
-</ul>
-<h3 id="ui-work">UI Work</h3>
-<ul>
-<li>UI refinements for recommendations.</li>
-</ul>
+          <h1 id="how-to-run-the-app">How to Run the app</h1>
+<h2 id="instructions-to-run-the-app">Instructions to run the app</h2>
+<ol>
+<li>
+<p>Run in terminal</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>flutter pub get
+</span></span></code></pre></div></li>
+<li>
+<p>At the root of the project create a file called  <code>.env</code> and add your API KEY
+API_KEY=api_key=YOUR API KEY</p>
+</li>
+</ol>
         </div>
-        <a href="/progress-reports/calendar-plan/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        <a href="/documentation/howtorun/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
       </div>
     </div>
   </div>
@@ -241,14 +175,25 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/progress-reports/report_week1/" class="color-inherit dim link">
-            HW2 – Grading Rubric (Team Project)
+          <a href="/documentation/architecture/" class="color-inherit dim link">
+            Architecture Docs
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          
+          <h1 id="app-architecture">App Architecture</h1>
+<p><img src="/software-architecture.png" alt="App Architecture"></p>
+<h2 id="overview">Overview</h2>
+<p>We will grab all our movie data in the <a href="https://developer.themoviedb.org/docs/getting-started">Tmdb API</a>. The API already offers login and this means users has the ability to add, remove, update, and rate movies.</p>
+<h2 id="app-design-pattern-mvvm">App Design Pattern (MVVM)</h2>
+<p><img src="https://journaldev.nyc3.cdn.digitaloceanspaces.com/2018/04/android-mvvm-pattern.png" alt="MVVM"></p>
+<p>We are going to use MVVM Design pattern to make it easier for collaborations, scalable, and testing.</p>
+<ul>
+<li>I will create another tutorial file on how everything works with the codebase</li>
+</ul>
+<h1 id="-movie-app--flutter">🎬 Movie App – Flutter</h1>
+<p>A Flutter-based movie browsing application that allows users to log in, explore popular movies, open detailed pages, and manage their profile. The app uses MVVM architecture with Provider for state management and integrates with a movie API for real-time data.</p>
         </div>
-        <a href="/progress-reports/report_week1/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        <a href="/documentation/architecture/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
       </div>
     </div>
   </div>
@@ -266,7 +211,7 @@
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:38355/" >
     &copy;  Movie App 2025 
   </a>
     <div><div class="ananke-socials"></div>

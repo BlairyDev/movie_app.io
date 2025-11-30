@@ -70,7 +70,7 @@ The Detail Page contains full information about a selected movie or TV show.
 
 # 👤 Profile Page
 
-![Profile Page](static/user-manual/profile.png)
+![Profile Page](/user-manual/profile.png)
 
 The Profile Page allows you to manage your personal lists and account preferences.
 
@@ -94,8 +94,8 @@ The Profile Page allows you to manage your personal lists and account preference
 ---
 
 # 🔎 Search & Filter
-![Search](static/user-manual/search.png)
-![Search Filter](static/user-manual/filter.png)
+![Search](/user-manual/search.png)
+![Search Filter](/user-manual/filter.png)
 
 ## Searching
 - Search by **title**, **keyword**, or **cast**.

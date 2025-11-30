@@ -7,7 +7,7 @@ title = 'Architecture Docs'
 # App Architecture
 
 
-![App Architecture](/static/software-architecture.png)
+![App Architecture](/software-architecture.png)
 
 
 

@@ -90,7 +90,10 @@ lib/.env
 ```
 and add:
 ```dart
-const apiKey = "YOUR_API_KEY";
+API_KEY=api_key="YOUR_API_KEY"
+//for testing
+TEST_PASSWORD="TMDB_PASSWORD"
+TEST_USERNAME="USERNAME"
 
 4. Run the app:
 ```bash
@@ -106,8 +109,7 @@ flutter run
 - Provider  
 - HTTP  
 - Carousel Slider  
-- GetIt (if DI used)  
-- TMDB or other movie API  
+- GetIt (if DI used)   
 
 ---
 
@@ -122,11 +124,10 @@ flutter run
 
 ## 🔮 Future Improvements
 
-- Add watchlist & favorites  
-- Implement offline mode with caching  
 - Build improved animations  
-- Add pagination  
-- Add user settings / themes  
+- Improve UI
+- Add more features
+- Add our own server
 
 ---
 
@@ -139,11 +140,3 @@ flutter run
 **Preston** 
 
 ---
-
-If you want, I can also generate:
-✔ API documentation  
-✔ Class diagram  
-✔ System architecture diagram  
-✔ PDF version of this README  
-
-Just tell me!  

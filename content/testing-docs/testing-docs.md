@@ -22,175 +22,6 @@ Formal automated regression tests (scripts or automated suites) were planned but
 
 
 
-# Flutter Movie App – Acceptance Tests
-
-## Week 2 – Login
-
-### Login Feature
-
-#### Scenario 1: Successful Login
-- **Given** the user is on the login screen  
-- **When** they enter a valid TMDB email and password  
-- **And** tap **Login**  
-- **Then** the user is authenticated  
-- **And** navigated to the Home Screen  
-
-#### Scenario 2: Invalid Login
-- **Given** the user is on the login screen  
-- **When** they enter invalid credentials  
-- **And** tap **Login**  
-- **Then** an error message appears  
-- **And** the user stays on the login screen  
-
-#### Scenario 3: Register (TMDB required)
-- **Given** the user wants to create an account  
-- **When** they tap **Register with TMDB**  
-- **Then** the TMDB registration page opens  
-
-#### Scenario 4: Forgot Password
-- **Given** the user forgot their password  
-- **When** they tap **Forgot Password**  
-- **Then** the TMDB password reset page opens  
-
----
-
-## Week 3 – Detail Pages (Start)
-
-### Movie/TV Detail Page
-
-#### Scenario 1: Display basic details
-- **Given** the user opens a movie page  
-- **Then** the app shows:  
-  - Title  
-  - Release date  
-  - Synopsis  
-
-#### Scenario 2: Display cast & crew
-- **Given** the user is on the detail page  
-- **Then** cast, crew, and production details appear  
-
-#### Scenario 3: Show similar movies
-- **Given** the user scrolls  
-- **Then** similar or related movies are displayed  
-
-#### Scenario 4: Add movie to list
-- **Given** the user is viewing a movie  
-- **When** they tap **Add to List**  
-- **Then** the movie is added to their watchlist/favorites  
-
----
-
-## Week 4 – Ratings & Reviews
-
-### Ratings
-
-#### Scenario 1: Add rating
-- **Given** the user is logged in  
-- **When** they give a rating (1–10)  
-- **Then** the rating is saved  
-
-#### Scenario 2: Edit/remove rating
-- **Given** the user has rated a movie  
-- **When** they edit or delete it  
-- **Then** the rating updates correctly  
-
-#### Scenario 3: Average rating
-- **Given** multiple users rated a movie  
-- **Then** the average rating reflects aggregated data  
-
----
-
-### Reviews
-
-#### Scenario 1: View reviews
-- **Given** the user is on the detail page  
-- **When** they scroll to reviews  
-- **Then** reviews show username, timestamp, and rating  
-
-#### Scenario 2: Sort reviews
-- **Given** reviews are loaded  
-- **When** user selects a sort mode  
-- **Then** reviews reorder by:  
-  - Newest  
-  - Highest rated  
-
----
-
-## Week 5 – Profiles & Detail Page Completion
-
-### Profiles
-
-#### Scenario 1: View profile
-- **Given** the user opens their profile  
-- **Then** they see:  
-  - Watchlist  
-  - Favorites  
-
-#### Scenario 2: Logout
-- **Given** the user is logged in  
-- **When** they tap **Logout**  
-- **Then** they return to login  
-- **And** session data is cleared  
-
----
-
-## Week 6 – Search, Filter, Watchlist
-
-### Search
-
-#### Scenario 1: Dynamic search
-- **Given** the user types in the search bar  
-- **Then** search results update dynamically  
-
-### Filters
-
-#### Scenario 1: Apply filters
-- **Given** the user selects genre/year/rating/country filters  
-- **Then** the results update  
-
-#### Scenario 2: Reset filters
-- **Given** filters are applied  
-- **When** the user taps **Clear Filters**  
-- **Then** all settings reset to default  
-
----
-
-## Watchlist & Favorites
-
-#### Scenario 1: Add/remove watchlist
-- **Given** the user is on a movie detail page  
-- **When** they tap **Add to Watchlist**  
-- **Then** the movie is added  
-- **When** they tap **Remove**  
-- **Then** the movie is removed  
-
-#### Scenario 2: Favorite a movie
-- **Given** the user is on a detail page  
-- **When** they tap **Favorite**  
-- **Then** the movie is added to favorites  
-
----
-
-## Week 7 – Ratings & Recommendations
-
-### Ratings (final implementation)
-- (Same as week 4 – must be complete & functional)
-
-### Recommendations
-
-#### Scenario 1: Display recommendations
-- **Given** the user is logged in  
-- **When** recommendations load  
-- **Then** at least **10** suggestions appear  
-
-
-
-
-+++
-title = "Integration Testing"
-weight = 20
-+++
-
 # 📘 Integration Testing
 
 ## Overview
@@ -215,107 +46,252 @@ The integration tests in this project were designed to verify:
 
 ---
 
-# 🧪 Integration Tests Performed
+# Movie App - Integration Testing Documentation
 
-Below is a summary of the integration test scenarios implemented.
+## Overview
+
+This document provides comprehensive information about the integration tests for the Movie App. The test suite validates critical user flows including authentication, navigation, search functionality, profile management, and logout operations.
+
+## Prerequisites
+
+### Environment Setup
+
+1. **Create a TMDB Account**
+   - Sign up at [The Movie Database (TMDB)](https://www.themoviedb.org/)
+   - Generate API credentials
+
+2. **Configure Environment Variables**
+   
+   Create a `.env` file in the root directory with the following credentials:
+   ```env
+   TEST_USERNAME=your_tmdb_username
+   TEST_PASSWORD=your_tmdb_password
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   flutter pub get
+   ```
+
+## Running the Tests
+
+### Run All Tests
+```bash
+flutter test integration_test/app_test.dart
+```
+
+
+## Test Suite Structure
+
+The integration tests are organized into the following categories:
+
+### 1. Login and Navigation Tests
+
+Tests that verify user authentication and basic navigation flows.
+
+| Test Name | Description | Key Validations |
+|-----------|-------------|-----------------|
+| `Login success navigates to home screen` | Validates successful login flow | - Username/password entry<br>- Login button functionality<br>- Navigation to home screen |
+| `ProfileScreen then back` | Tests profile navigation | - Navigation to profile screen<br>- Back navigation to home |
+| `Register and forgot password buttons are present` | Verifies auxiliary buttons | - "Need an account? Register" button<br>- "Forgot Password? Reset Password" button |
+
+### 2. Search Functionality Tests
+
+Tests covering the movie search feature and its various states.
+
+| Test Name | Description | Key Validations |
+|-----------|-------------|-----------------|
+| `Search icon opens search bar` | Validates search UI toggle | - Search icon visibility<br>- Search bar appearance<br>- Cancel icon replaces search icon |
+| `Search for movies and display results` | Tests search execution | - Search query entry<br>- Results display in list view<br>- Card widgets presence |
+| `Search with no results shows message` | Tests empty state | - No results message display<br>- Proper handling of non-existent queries |
+| `Cancel search returns to carousel view` | Tests search cancellation | - Cancel icon functionality<br>- Return to carousel view<br>- Search icon restoration |
+| `Multiple searches can be performed consecutively` | Tests sequential searches | - Multiple search executions<br>- Results update correctly |
+| `Search hint text is displayed` | Validates placeholder text | - "Search movies..." hint text visibility |
+| `Profile and search icons coexist properly` | Tests icon state management | - Both icons visible simultaneously<br>- Proper icon transitions |
+| `Loading indicator shows during search` | Tests loading states | - Loading indicator appearance<br>- Results or message display after loading |
+
+### 3. Profile Screen Tests
+
+Tests for profile screen functionality and tab navigation.
+
+| Test Name | Description | Key Validations |
+|-----------|-------------|-----------------|
+| `Navigate to profile screen from home` | Tests profile access | - Profile icon functionality<br>- Profile screen elements visibility |
+| `Display watchlist movies by default` | Tests default view | - Watchlist tab selection<br>- Movies/TV Shows sub-tabs |
+| `Switch between Movies and TV Shows in watchlist` | Tests tab switching | - TV Shows tab navigation<br>- Movies tab navigation<br>- Content or empty state display |
+| `Navigate to Favorites tab` | Tests favorites section | - Favorites tab access<br>- Sub-tabs visibility |
+| `Navigate to Reviews tab` | Tests reviews section | - Reviews tab access<br>- "Coming Soon" message display |
+
+### 4. Logout Tests
+
+Tests for logout functionality and session management.
+
+| Test Name | Description | Key Validations |
+|-----------|-------------|-----------------|
+| `Logout and navigate to login screen` | Tests logout flow | - Logout button functionality<br>- Navigation to login screen<br>- Login fields presence |
+| `Clear session data on logout` | Tests data cleanup | - Session data removal<br>- Profile data unavailability |
+| `Cannot navigate back after logout` | Tests navigation stack | - Back navigation prevention<br>- Route removal verification |
+
+### 5. Error Handling Tests
+
+Tests for error states and edge cases.
+
+| Test Name | Description | Key Validations |
+|-----------|-------------|-----------------|
+| `Display error message when watchlist fails to load` | Tests error UI | - Error message display<br>- Retry button functionality |
+| `Display empty state when no movies found` | Tests empty states | - Empty state message<br>- Proper UI feedback |
+
+## Key Features Tested
+
+### Authentication Flow
+- Login with valid credentials
+- Navigation after successful login
+- Session persistence
+
+### Search Functionality
+- Search bar toggle
+- Movie search execution
+- Results display (list view)
+- Empty state handling
+- Search cancellation
+- Multiple consecutive searches
+- Loading states
+
+### Navigation
+- Home to Profile navigation
+- Back navigation
+- Tab switching within Profile
+- Logout navigation with route clearing
+
+### Profile Management
+- Watchlist display
+- Favorites access
+- Reviews section
+- Movies/TV Shows toggle
+- Tab navigation
+
+### Error Handling
+- Network error recovery
+- Empty state messages
+- Retry mechanisms
+
+## Helper Functions
+
+### `loginAndNavigateToHome(WidgetTester tester)`
+
+A reusable helper function that:
+1. Launches the app
+2. Retrieves credentials from `.env`
+3. Performs login
+4. Waits for navigation to home screen
+5. Waits for movies to load
+
+**Usage:**
+```dart
+await loginAndNavigateToHome(tester);
+```
+
+## Test Execution Flow
+
+Each test follows this general pattern:
+
+1. **Setup**: Reset GetIt instance for clean state
+2. **Arrange**: Launch app and perform necessary navigation
+3. **Act**: Execute the test action (tap, enter text, etc.)
+4. **Assert**: Verify expected outcomes using `expect()`
+5. **Cleanup**: Automatic via `setUp()` hook
+
+## Important Notes
+
+### Timing Considerations
+
+The tests use various wait strategies:
+- `pumpAndSettle()`: Wait for all animations to complete
+- `pump(Duration)`: Wait for a specific duration
+- Multiple pumps for async operations
+
+### Widget Keys
+
+The app uses specific keys for testing:
+- `usernameField`: Username input field
+- `passwordField`: Password input field
+- `loginButton`: Login submit button
+- `homeScreen`: Home screen identifier
+
+### State Management
+
+- **GetIt**: Dependency injection container (reset before each test)
+- **Provider**: State management (HomeViewModel, ProfileViewModel)
+
+## Troubleshooting
+
+### Tests Failing Due to Timeout
+- Increase wait durations in `pump(Duration(seconds: X))`
+- Check network connectivity for API calls
+
+### Widget Not Found
+- Verify widget keys match implementation
+- Use `find.text()`, `find.byType()`, or `find.byIcon()` as alternatives
+- Check if widget is scrollable and needs `scrollUntilVisible()`
+
+### Authentication Failures
+- Verify `.env` file exists and contains valid credentials
+- Ensure TMDB account is active
+- Check API rate limits
+
+### GetIt Errors
+- Ensure `setUp()` is properly resetting GetIt
+- Verify dependencies are registered correctly in `main.dart`
+
+## Best Practices
+
+1. **Isolation**: Each test should be independent
+2. **Cleanup**: Use `setUp()` to ensure clean state
+3. **Assertions**: Use descriptive error messages
+4. **Wait Strategies**: Balance between speed and reliability
+5. **Real User Flows**: Test complete user journeys, not just individual actions
+
+## Continuous Integration
+
+To run these tests in CI/CD:
+
+```yaml
+# Example GitHub Actions workflow
+- name: Run Integration Tests
+  run: |
+    flutter test integration_test/app_test.dart
+```
+
+Ensure environment variables are securely stored in CI/CD secrets.
+
+## Test Coverage Summary
+
+- ✅ Authentication (3 tests)
+- ✅ Search Functionality (9 tests)
+- ✅ Profile Navigation (5 tests)
+- ✅ Logout Operations (3 tests)
+- ✅ Error Handling (2 tests)
+
+**Total Tests**: 22
+
+## Future Test Additions
+
+Consider adding tests for:
+- Movie detail view
+- Add to watchlist functionality
+- Add to favorites functionality
+- Rating submission
+- TV show search and navigation
+- Offline behavior
+- Network error recovery
+- Invalid login credentials
+- Form validation
 
 ---
 
-## ✔ 1. Login → HomeScreen Flow
+## Contact & Support
 
-**Purpose:**  
-Confirm that valid TMDB credentials successfully navigate the user to the Home screen.
-
-**Actions Performed:**
-
-- Enter username  
-- Enter password  
-- Tap Login button  
-- Wait for async processes  
-- Validate that `HomeScreen` appears  
-
-**Why it matters:**  
-This is the central entry point to the entire app.
-
----
-
-## ✔ 2. Profile Navigation (Home → Profile → Back)
-
-**Purpose:**  
-Verify that users can open their profile and return to the home screen.
-
-**Actions Performed:**
-
-- Tap Profile icon  
-- Confirm `ProfileScreen` is displayed  
-- Navigate back  
-- Confirm `HomeScreen` is visible  
-
-**Why it matters:**  
-Profile contains watchlist, favorites, and logout features. Navigation must be stable.
-
----
-
-## ✔ 3. Carousel Movie → Movie Detail Screen
-
-**Purpose:**  
-Ensure that TMDB API results load correctly and that tapping a movie navigates to the detail page.
-
-**Actions Performed:**
-
-- Wait for carousel movie cards to load  
-- Tap the center of the carousel  
-- Confirm detail-screen elements such as:  
-  - “Toggle Watchlist”  
-  - “See Reviews”  
-- Navigate back to Home  
-
-**Why it matters:**  
-This verifies the entire end-to-end flow:  
-API → Carousel UI → Tap → Movie Detail page.
-
----
-
-## ✔ 4. Register and Forgot Password Buttons
-
-**Purpose:**  
-Check that both TMDB authentication actions are available on the login screen.
-
-**Actions Performed:**
-
-- Look for “Need an account? Register”  
-- Look for “Forgot Password? Reset Password”  
-
-**Why it matters:**  
-These are required in the Week 2 login features.
-
----
-
-# 📂 Feature Coverage
-
-The integration tests directly support key project requirements:
-
-| Feature | Requirement Verified | Test |
-|--------|----------------------|------|
-| Login | TMDB login via username/password | Login success test |
-| Profile | User can access profile and return | Profile navigation test |
-| Movie Detail | Movies load + detail page navigation works | Carousel → detail test |
-| TMDB Auth | Register and Forgot Password links visible | Buttons visibility test |
-
----
-
-# 🏆 Importance of Integration Testing
-
-These tests ensure:
-
-- Correct screen-to-screen transitions  
-- Stable user experience  
-- Accurate UI behavior after async loads  
-- Functional API integration  
-- Navigation stack reliability  
-- Early detection of breaking changes (supports regression testing)
-
-They verify that the app behaves properly as a complete system, not just as individual widgets or functions.
+For questions or issues with the test suite, please refer to the project's issue tracker or documentation.
 
 ---
 
@@ -329,5 +305,153 @@ The Movie App’s integration tests successfully validated:
 - Movie detail navigation  
 - Presence of TMDB register/reset password options  
 
-This confirms the app’s core flows operate correctly and provides confidence for future updates, UI changes, and feature additions.
+# Acceptance Tests – Movie App
+
+## 1. Login & Authentication
+
+### Scenario 1: Successful Login
+- **Given** the user is on the Login screen  
+- **When** they enter a valid TMDB email and password  
+- **And** tap **Login**  
+- **Then** the user is authenticated  
+- **And** redirected to the Home screen  
+
+### Scenario 2: Invalid Login
+- **Given** the user is on the Login screen  
+- **When** they enter an invalid email or password  
+- **And** tap **Login**  
+- **Then** an error message is displayed  
+- **And** the user remains on the Login screen  
+
+### Scenario 3: Redirect to Register (TMDB Required)
+- **Given** the user is on the Login screen  
+- **When** they tap **Register**  
+- **Then** the app redirects them to the TMDB registration page  
+
+### Scenario 4: Forgot Password
+- **Given** the user is on the Login screen  
+- **When** they tap **Forgot Password**  
+- **Then** the user is redirected to the TMDB password recovery page  
+
+
+## 2. Movie & TV Detail Pages
+
+### Scenario 1: Display Movie Details
+- **Given** the user opens a movie detail page  
+- **Then** the app displays the title, release date, and synopsis  
+
+### Scenario 2: Add to Watchlist
+- **Given** the user is on the detail page  
+- **When** they tap **Add to Watchlist**  
+- **Then** the movie is added to their watchlist  
+- **And** the UI updates to reflect the change  
+
+### Scenario 3: Remove from Watchlist
+- **Given** the movie is already in the user’s watchlist  
+- **When** they tap **Remove from Watchlist**  
+- **Then** the movie is removed from the watchlist  
+
+### Scenario 4: Add to Favorites
+- **Given** the user is on the detail page  
+- **When** they tap **Add to Favorites**  
+- **Then** the movie is added to their favorites  
+
+### Scenario 5: Remove from Favorites
+- **Given** the movie is in the favorites list  
+- **When** they tap **Remove from Favorites**  
+- **Then** the movie is removed from favorites  
+
+
+## 3. Ratings
+
+### Scenario 1: Add Rating
+- **Given** the user is on a detail page  
+- **When** they submit a rating from 1–10  
+- **Then** the rating is saved and displayed  
+
+### Scenario 2: Edit Rating
+- **Given** the user already rated the movie  
+- **When** they update the rating  
+- **Then** the new rating replaces the old one  
+
+### Scenario 3: Remove Rating
+- **Given** the user has a rating on the movie  
+- **When** they remove their rating  
+- **Then** the rating is deleted  
+
+
+## 4. Reviews
+
+### Scenario 1: View Reviews
+- **Given** the user is on a detail page  
+- **When** reviews are available  
+- **Then** each review displays username, timestamp, and rating (if provided)  
+
+### Scenario 2: Sort Reviews
+- **Given** reviews are displayed  
+- **When** the user chooses a sort option (newest, highest rated)  
+- **Then** the reviews reorder accordingly  
+
+
+## 5. Profiles
+
+### Scenario 1: Display Profile
+- **Given** the user opens their profile  
+- **Then** the app displays the user’s watchlist and favorites  
+
+### Scenario 2: Logout
+- **Given** the user is logged in  
+- **When** they tap **Logout**  
+- **Then** they are signed out  
+- **And** redirected to the Login screen  
+
+
+## 6. Search & Filters
+
+### Scenario 1: Search by Title/Keyword/Cast
+- **Given** the user is on the Search screen  
+- **When** they type a term  
+- **Then** results update dynamically  
+- **And** movies/TV shows matching title, keyword, or cast appear  
+
+### Scenario 2: Apply Filters
+- **Given** the user opens Filters  
+- **When** they choose genre, year, rating, or country  
+- **Then** the results update to match the filters  
+
+### Scenario 3: Clear Filters
+- **Given** filters are active  
+- **When** the user taps **Reset/Clear Filters**  
+- **Then** all filters return to default  
+- **And** the search results reset  
+
+
+## 7. Watchlist & Favorites (Global Behavior)
+
+### Scenario 1: Watchlist Toggle
+- **Given** the user views a movie  
+- **When** they toggle Watchlist  
+- **Then** the movie is added or removed accordingly  
+
+### Scenario 2: Favorites Toggle
+- **Given** the user views a movie  
+- **When** they toggle Favorites  
+- **Then** the movie is added or removed accordingly  
+
+
+## 8. Recommendations
+
+### Scenario 1: Display Recommendations
+- **Given** the user is on the Home or Detail page  
+- **When** recommendations load  
+- **Then** at least 10 suggested movies/TV shows are displayed  
+
+
+## 9. UI Requirements
+
+### Scenario 1: General UI Rendering
+- **Given** the user navigates through the app  
+- **Then** all pages must display intended UI components  
+- **And** all interface elements must render correctly  
+
 

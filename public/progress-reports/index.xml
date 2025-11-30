@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Progress-Reports on Movie App</title>
-    <link>http://localhost:38355/progress-reports/</link>
+    <link>http://localhost:33555/progress-reports/</link>
     <description>Recent content in Progress-Reports on Movie App</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:38355/progress-reports/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:33555/progress-reports/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:38355/progress-reports/calendar-plan/</link>
+      <link>http://localhost:33555/progress-reports/calendar-plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:38355/progress-reports/calendar-plan/</guid>
+      <guid>http://localhost:33555/progress-reports/calendar-plan/</guid>
       <description>&lt;h1 id=&#34;team-project--feature-timeline&#34;&gt;Team Project – Feature Timeline&lt;/h1&gt;&#xA;&lt;h2 id=&#34;week-2&#34;&gt;Week 2&lt;/h2&gt;&#xA;&lt;h3 id=&#34;login&#34;&gt;Login&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The system must allow login via email/password.&lt;/li&gt;&#xA;&lt;li&gt;The system must force user to register with TMDB.&lt;/li&gt;&#xA;&lt;li&gt;The system must provide “forgot password” functionality (redirect to TMDB).&lt;/li&gt;&#xA;&lt;li&gt;Design login page (Cambden).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-3&#34;&gt;Week 3&lt;/h2&gt;&#xA;&lt;h3 id=&#34;login-preston--completed&#34;&gt;Login (Preston) – Completed&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The system must allow login via email/password.&lt;/li&gt;&#xA;&lt;li&gt;The system must force user to register with TMDB.&lt;/li&gt;&#xA;&lt;li&gt;The system must provide “forgot password” functionality (redirect to TMDB).&lt;/li&gt;&#xA;&lt;li&gt;Design login page (Cambden).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;detail-pages-next-week--cambden&#34;&gt;Detail Pages (next week) – Cambden&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Detail pages must display title, release date, synopsis.&lt;/li&gt;&#xA;&lt;li&gt;Must be able to add/remove movie to watchlist and favorites.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-4&#34;&gt;Week 4&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ratings&#34;&gt;Ratings&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to rate movies on a 1–10 scale.&lt;/li&gt;&#xA;&lt;li&gt;Ratings must be editable or removable by the user.&lt;/li&gt;&#xA;&lt;li&gt;User ratings must be aggregated into an average score.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;reviews-aj--completed&#34;&gt;Reviews (AJ) – Completed&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to read reviews.&lt;/li&gt;&#xA;&lt;li&gt;Reviews must display username, timestamp, and rating (if provided).&lt;/li&gt;&#xA;&lt;li&gt;Reviews must be sortable (newest, highest rated).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-5&#34;&gt;Week 5&lt;/h2&gt;&#xA;&lt;h3 id=&#34;detail-pages&#34;&gt;Detail Pages&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Detail pages must display title, release date, synopsis.&lt;/li&gt;&#xA;&lt;li&gt;Must be able to add and remove movies from watchlist and favorites.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;profiles&#34;&gt;Profiles&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Profiles must display a watchlist and favorites.&lt;/li&gt;&#xA;&lt;li&gt;Users must be able to log out.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-6&#34;&gt;Week 6&lt;/h2&gt;&#xA;&lt;h3 id=&#34;searchfilter&#34;&gt;Search/Filter&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to search movies/TV shows by title, keyword, or cast.&lt;/li&gt;&#xA;&lt;li&gt;Filters must support genre, year, rating, and country.&lt;/li&gt;&#xA;&lt;li&gt;Search results must update dynamically as the user types.&lt;/li&gt;&#xA;&lt;li&gt;Users must be able to clear filters and reset to default view.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;watchlist&#34;&gt;Watchlist&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to add/remove movies to their watchlist.&lt;/li&gt;&#xA;&lt;li&gt;Users must be able to mark movies as favorites.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-7&#34;&gt;Week 7&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ratings-1&#34;&gt;Ratings&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to rate movies on a 1–10 scale.&lt;/li&gt;&#xA;&lt;li&gt;Ratings must be able to add and remove.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;recommendations&#34;&gt;Recommendations&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Recommendations must display at least 10 suggested movies/TV shows.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;ui-work&#34;&gt;UI Work&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;UI refinements for recommendations.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>HW2 – Grading Rubric (Team Project)</title>
-      <link>http://localhost:38355/progress-reports/report_week1/</link>
+      <link>http://localhost:33555/progress-reports/report_week1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:38355/progress-reports/report_week1/</guid>
+      <guid>http://localhost:33555/progress-reports/report_week1/</guid>
       <description></description>
     </item>
   </channel>

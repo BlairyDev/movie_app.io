@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Api-Docs on Movie App</title>
-    <link>http://localhost:38355/api-docs/</link>
+    <link>http://localhost:33555/api-docs/</link>
     <description>Recent content in Api-Docs on Movie App</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Nov 2025 14:27:02 -0500</lastBuildDate>
-    <atom:link href="http://localhost:38355/api-docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:33555/api-docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Api Docs</title>
-      <link>http://localhost:38355/api-docs/api-docs/</link>
+      <link>http://localhost:33555/api-docs/api-docs/</link>
       <pubDate>Thu, 27 Nov 2025 14:27:02 -0500</pubDate>
-      <guid>http://localhost:38355/api-docs/api-docs/</guid>
+      <guid>http://localhost:33555/api-docs/api-docs/</guid>
       <description>&lt;h1 id=&#34;-movie-app--api-documentation&#34;&gt;🎬 Movie App – API Documentation&lt;/h1&gt;&#xA;&lt;p&gt;This document describes the &lt;strong&gt;API services&lt;/strong&gt; used in the Movie App project. The app uses &lt;strong&gt;TMDB API&lt;/strong&gt; and custom API service classes in Flutter (&lt;code&gt;TmdbApiService&lt;/code&gt; and &lt;code&gt;TmdbAuthService&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;p&gt;For more information about the Third Party here is a &lt;a href=&#34;https://developer.themoviedb.org/docs/getting-started&#34;&gt;link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-base-urls--authorization&#34;&gt;🔹 Base URLs &amp;amp; Authorization&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;TMDB API Base URL:&lt;/strong&gt; &lt;code&gt;https://api.themoviedb.org/3&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;API Key:&lt;/strong&gt; Stored in &lt;code&gt;.env&lt;/code&gt; → &lt;code&gt;API_KEY&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Authorization:&lt;/strong&gt; Bearer token in &lt;code&gt;.env&lt;/code&gt; → &lt;code&gt;ACCESS_TOKEN&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Headers for authenticated requests:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

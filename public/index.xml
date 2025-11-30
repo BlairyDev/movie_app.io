@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Movie App</title>
-    <link>http://localhost:38355/</link>
+    <link>http://localhost:33555/</link>
     <description>Recent content on Movie App</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Nov 2025 14:10:17 -0500</lastBuildDate>
-    <atom:link href="http://localhost:38355/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:33555/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>User Manual</title>
-      <link>http://localhost:38355/user-manual/user-manual/</link>
+      <link>http://localhost:33555/user-manual/user-manual/</link>
       <pubDate>Sat, 29 Nov 2025 14:10:17 -0500</pubDate>
-      <guid>http://localhost:38355/user-manual/user-manual/</guid>
+      <guid>http://localhost:33555/user-manual/user-manual/</guid>
       <description>&lt;h1 id=&#34;movie-app--user-manual&#34;&gt;Movie App – User Manual&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the Movie App! This guide explains how to use all major features, including logging in, browsing movies, viewing details, managing ratings, favorites, and watchlists, and using your profile.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;login&#34;&gt;Login&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./images/login.png&#34; alt=&#34;Login Page&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;logging-in&#34;&gt;Logging In&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the application.&lt;/li&gt;&#xA;&lt;li&gt;Enter your &lt;strong&gt;email&lt;/strong&gt; and &lt;strong&gt;password&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Tap &lt;strong&gt;Login&lt;/strong&gt; to continue.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;registering-a-new-account&#34;&gt;Registering a New Account&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;New users must register through &lt;strong&gt;TMDB&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Tap &lt;strong&gt;Register with TMDB&lt;/strong&gt; to create an account.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;forgot-password&#34;&gt;Forgot Password&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Select &lt;strong&gt;Forgot Password&lt;/strong&gt; to be redirected to TMDB’s password recovery page.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;home-screen&#34;&gt;Home Screen&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;./images/home.png&#34; alt=&#34;Home Screen&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Testing Docs</title>
-      <link>http://localhost:38355/testing-docs/testing-docs/</link>
+      <link>http://localhost:33555/testing-docs/testing-docs/</link>
       <pubDate>Thu, 27 Nov 2025 14:43:20 -0500</pubDate>
-      <guid>http://localhost:38355/testing-docs/testing-docs/</guid>
+      <guid>http://localhost:33555/testing-docs/testing-docs/</guid>
       <description>&lt;h1 id=&#34;regression-testing&#34;&gt;Regression Testing&lt;/h1&gt;&#xA;&lt;p&gt;Regression testing ensures that new features do not break previously working functionality.&lt;/p&gt;&#xA;&lt;p&gt;For this project, full regression testing was &lt;strong&gt;not implemented&lt;/strong&gt; due to time limitations and sprint priorities.&lt;/p&gt;&#xA;&lt;p&gt;However, the team performed &lt;strong&gt;informal manual checks&lt;/strong&gt; after major features were added, including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Login still works after UI updates&lt;/li&gt;&#xA;&lt;li&gt;Navigation continues to work&lt;/li&gt;&#xA;&lt;li&gt;Detail pages still load correctly&lt;/li&gt;&#xA;&lt;li&gt;Search and filters still respond as expected&lt;/li&gt;&#xA;&lt;li&gt;Able to add and remove in watchlist and favorites&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Formal automated regression tests (scripts or automated suites) were planned but not executed in this version of the project.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Api Docs</title>
-      <link>http://localhost:38355/api-docs/api-docs/</link>
+      <link>http://localhost:33555/api-docs/api-docs/</link>
       <pubDate>Thu, 27 Nov 2025 14:27:02 -0500</pubDate>
-      <guid>http://localhost:38355/api-docs/api-docs/</guid>
+      <guid>http://localhost:33555/api-docs/api-docs/</guid>
       <description>&lt;h1 id=&#34;-movie-app--api-documentation&#34;&gt;🎬 Movie App – API Documentation&lt;/h1&gt;&#xA;&lt;p&gt;This document describes the &lt;strong&gt;API services&lt;/strong&gt; used in the Movie App project. The app uses &lt;strong&gt;TMDB API&lt;/strong&gt; and custom API service classes in Flutter (&lt;code&gt;TmdbApiService&lt;/code&gt; and &lt;code&gt;TmdbAuthService&lt;/code&gt;).&lt;/p&gt;&#xA;&lt;p&gt;For more information about the Third Party here is a &lt;a href=&#34;https://developer.themoviedb.org/docs/getting-started&#34;&gt;link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;-base-urls--authorization&#34;&gt;🔹 Base URLs &amp;amp; Authorization&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;TMDB API Base URL:&lt;/strong&gt; &lt;code&gt;https://api.themoviedb.org/3&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;API Key:&lt;/strong&gt; Stored in &lt;code&gt;.env&lt;/code&gt; → &lt;code&gt;API_KEY&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Authorization:&lt;/strong&gt; Bearer token in &lt;code&gt;.env&lt;/code&gt; → &lt;code&gt;ACCESS_TOKEN&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Headers for authenticated requests:&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:38355/documentation/howtorun/</link>
+      <link>http://localhost:33555/documentation/howtorun/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:38355/documentation/howtorun/</guid>
+      <guid>http://localhost:33555/documentation/howtorun/</guid>
       <description>&lt;h1 id=&#34;how-to-run-the-app&#34;&gt;How to Run the app&lt;/h1&gt;&#xA;&lt;h2 id=&#34;instructions-to-run-the-app&#34;&gt;Instructions to run the app&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Run in terminal&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;flutter pub get&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;At the root of the project create a file called  &lt;code&gt;.env&lt;/code&gt; and add your API KEY&#xA;API_KEY=api_key=YOUR API KEY&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:38355/progress-reports/calendar-plan/</link>
+      <link>http://localhost:33555/progress-reports/calendar-plan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:38355/progress-reports/calendar-plan/</guid>
+      <guid>http://localhost:33555/progress-reports/calendar-plan/</guid>
       <description>&lt;h1 id=&#34;team-project--feature-timeline&#34;&gt;Team Project – Feature Timeline&lt;/h1&gt;&#xA;&lt;h2 id=&#34;week-2&#34;&gt;Week 2&lt;/h2&gt;&#xA;&lt;h3 id=&#34;login&#34;&gt;Login&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The system must allow login via email/password.&lt;/li&gt;&#xA;&lt;li&gt;The system must force user to register with TMDB.&lt;/li&gt;&#xA;&lt;li&gt;The system must provide “forgot password” functionality (redirect to TMDB).&lt;/li&gt;&#xA;&lt;li&gt;Design login page (Cambden).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-3&#34;&gt;Week 3&lt;/h2&gt;&#xA;&lt;h3 id=&#34;login-preston--completed&#34;&gt;Login (Preston) – Completed&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The system must allow login via email/password.&lt;/li&gt;&#xA;&lt;li&gt;The system must force user to register with TMDB.&lt;/li&gt;&#xA;&lt;li&gt;The system must provide “forgot password” functionality (redirect to TMDB).&lt;/li&gt;&#xA;&lt;li&gt;Design login page (Cambden).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;detail-pages-next-week--cambden&#34;&gt;Detail Pages (next week) – Cambden&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Detail pages must display title, release date, synopsis.&lt;/li&gt;&#xA;&lt;li&gt;Must be able to add/remove movie to watchlist and favorites.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-4&#34;&gt;Week 4&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ratings&#34;&gt;Ratings&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to rate movies on a 1–10 scale.&lt;/li&gt;&#xA;&lt;li&gt;Ratings must be editable or removable by the user.&lt;/li&gt;&#xA;&lt;li&gt;User ratings must be aggregated into an average score.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;reviews-aj--completed&#34;&gt;Reviews (AJ) – Completed&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to read reviews.&lt;/li&gt;&#xA;&lt;li&gt;Reviews must display username, timestamp, and rating (if provided).&lt;/li&gt;&#xA;&lt;li&gt;Reviews must be sortable (newest, highest rated).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-5&#34;&gt;Week 5&lt;/h2&gt;&#xA;&lt;h3 id=&#34;detail-pages&#34;&gt;Detail Pages&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Detail pages must display title, release date, synopsis.&lt;/li&gt;&#xA;&lt;li&gt;Must be able to add and remove movies from watchlist and favorites.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;profiles&#34;&gt;Profiles&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Profiles must display a watchlist and favorites.&lt;/li&gt;&#xA;&lt;li&gt;Users must be able to log out.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-6&#34;&gt;Week 6&lt;/h2&gt;&#xA;&lt;h3 id=&#34;searchfilter&#34;&gt;Search/Filter&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to search movies/TV shows by title, keyword, or cast.&lt;/li&gt;&#xA;&lt;li&gt;Filters must support genre, year, rating, and country.&lt;/li&gt;&#xA;&lt;li&gt;Search results must update dynamically as the user types.&lt;/li&gt;&#xA;&lt;li&gt;Users must be able to clear filters and reset to default view.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;watchlist&#34;&gt;Watchlist&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to add/remove movies to their watchlist.&lt;/li&gt;&#xA;&lt;li&gt;Users must be able to mark movies as favorites.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;week-7&#34;&gt;Week 7&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ratings-1&#34;&gt;Ratings&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Users must be able to rate movies on a 1–10 scale.&lt;/li&gt;&#xA;&lt;li&gt;Ratings must be able to add and remove.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;recommendations&#34;&gt;Recommendations&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Recommendations must display at least 10 suggested movies/TV shows.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;ui-work&#34;&gt;UI Work&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;UI refinements for recommendations.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Architecture Docs</title>
-      <link>http://localhost:38355/documentation/architecture/</link>
+      <link>http://localhost:33555/documentation/architecture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:38355/documentation/architecture/</guid>
-      <description>&lt;h1 id=&#34;app-architecture&#34;&gt;App Architecture&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:38355/software-architecture.png&#34; alt=&#34;App Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;We will grab all our movie data in the &lt;a href=&#34;https://developer.themoviedb.org/docs/getting-started&#34;&gt;Tmdb API&lt;/a&gt;. The API already offers login and this means users has the ability to add, remove, update, and rate movies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;app-design-pattern-mvvm&#34;&gt;App Design Pattern (MVVM)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://journaldev.nyc3.cdn.digitaloceanspaces.com/2018/04/android-mvvm-pattern.png&#34; alt=&#34;MVVM&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;We are going to use MVVM Design pattern to make it easier for collaborations, scalable, and testing.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I will create another tutorial file on how everything works with the codebase&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;-movie-app--flutter&#34;&gt;🎬 Movie App – Flutter&lt;/h1&gt;&#xA;&lt;p&gt;A Flutter-based movie browsing application that allows users to log in, explore popular movies, open detailed pages, and manage their profile. The app uses MVVM architecture with Provider for state management and integrates with a movie API for real-time data.&lt;/p&gt;</description>
+      <guid>http://localhost:33555/documentation/architecture/</guid>
+      <description>&lt;h1 id=&#34;app-architecture&#34;&gt;App Architecture&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:33555/software-architecture.png&#34; alt=&#34;App Architecture&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;We will grab all our movie data in the &lt;a href=&#34;https://developer.themoviedb.org/docs/getting-started&#34;&gt;Tmdb API&lt;/a&gt;. The API already offers login and this means users has the ability to add, remove, update, and rate movies.&lt;/p&gt;&#xA;&lt;h2 id=&#34;app-design-pattern-mvvm&#34;&gt;App Design Pattern (MVVM)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://journaldev.nyc3.cdn.digitaloceanspaces.com/2018/04/android-mvvm-pattern.png&#34; alt=&#34;MVVM&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;We are going to use MVVM Design pattern to make it easier for collaborations, scalable, and testing.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I will create another tutorial file on how everything works with the codebase&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;-movie-app--flutter&#34;&gt;🎬 Movie App – Flutter&lt;/h1&gt;&#xA;&lt;p&gt;A Flutter-based movie browsing application that allows users to log in, explore popular movies, open detailed pages, and manage their profile. The app uses MVVM architecture with Provider for state management and integrates with a movie API for real-time data.&lt;/p&gt;</description>
     </item>
     <item>
       <title>HW2 – Grading Rubric (Team Project)</title>
-      <link>http://localhost:38355/progress-reports/report_week1/</link>
+      <link>http://localhost:33555/progress-reports/report_week1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:38355/progress-reports/report_week1/</guid>
+      <guid>http://localhost:33555/progress-reports/report_week1/</guid>
       <description></description>
     </item>
   </channel>

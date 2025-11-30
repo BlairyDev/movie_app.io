@@ -7,7 +7,7 @@ title = 'Architecture Docs'
 # App Architecture
 
 
-![App Architecture](/software-architecture.png)
+![App Architecture](/content/documentation/software-architecture.png)
 
 
 
@@ -98,52 +98,6 @@ flutter run
 ```
 
 ```
-
----
-
-## 🧪 Testing
-
-### ✔️ Unit Tests
-- ViewModel logic  
-- Widget  
-
-### ✔️ Integration Tests
-- Login to Home Screen
-- Navgation
-- Buttons
-
-Run tests:
-```bash
-flutter test
-```
-```
-
----
-
-## ✅ Acceptance Tests
-
-### **Scenario 1: Login Success**
-**Given** the app is launched  
-**And** the user is on the Login screen  
-**When** the user enters valid credentials  
-**Then** the app navigates to the **HomeScreen**
-
----
-
-### **Scenario 2: Invalid Login**
-**Given** the user is on the Login screen  
-**When** invalid credentials are entered  
-**Then** an error message appears  
-**And** the user remains on the Login page  
-
----
-
-### **Scenario 3: Movie Details Open**
-**Given** the user is on HomeScreen  
-**When** a movie card is tapped  
-**Then** the MovieDetailScreen is shown with info  
-
----
 
 ## 🧰 Technologies Used
 

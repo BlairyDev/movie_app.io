@@ -11,7 +11,7 @@ Welcome to the Movie App! This guide explains how to use all major features, inc
 
 #  Login
 
-![Login Page](./images/login.png)
+![Login Page](/content/user-manual/images/login.png)
 
 ## Logging In
 1. Open the application.
@@ -29,7 +29,7 @@ Welcome to the Movie App! This guide explains how to use all major features, inc
 
 #  Home Screen
 
-![Home Screen](./images/home.png)
+![Home Screen](/content/user-manual/images/home.png)
 
 The Home Screen serves as your main navigation hub.
 
@@ -43,7 +43,7 @@ The Home Screen serves as your main navigation hub.
 
 #  Detail Page
 
-![Detail Page](./images/detail.png)
+![Detail Page](/content/user-manual/images/detail.png)
 
 The Detail Page contains full information about a selected movie or TV show.
 
@@ -70,7 +70,7 @@ The Detail Page contains full information about a selected movie or TV show.
 
 # 👤 Profile Page
 
-![Profile Page](./images/profile.png)
+![Profile Page](/content/user-manual/images/profile.png)
 
 The Profile Page allows you to manage your personal lists and account preferences.
 
@@ -94,8 +94,8 @@ The Profile Page allows you to manage your personal lists and account preference
 ---
 
 # 🔎 Search & Filter
-![Search](./images/search.png)
-![Search Filter](./images/filter.png)
+![Search](/content/user-manual/images/search.png)
+![Search Filter](/content/user-manual/images/filter.png)
 
 ## Searching
 - Search by **title**, **keyword**, or **cast**.

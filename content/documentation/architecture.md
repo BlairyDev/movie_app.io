@@ -3,6 +3,7 @@ menus = 'main'
 title = 'Architecture Docs'
 +++
 
+Github Link: https://github.com/BlairyDev/movie_app
 
 # App Architecture
 

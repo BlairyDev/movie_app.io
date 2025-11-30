@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>User-Manuals on Movie App</title>
+    <link>http://localhost:1313/user-manual/</link>
+    <description>Recent content in User-Manuals on Movie App</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Nov 2025 14:10:17 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/user-manual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>User Manual</title>
+      <link>http://localhost:1313/user-manual/user-manual/</link>
+      <pubDate>Sat, 29 Nov 2025 14:10:17 -0500</pubDate>
+      <guid>http://localhost:1313/user-manual/user-manual/</guid>
+      <description>&lt;h1 id=&#34;-movie-app--user-manual&#34;&gt;📘 Movie App – User Manual&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to the Movie App! This guide explains how to use all major features, including logging in, browsing movies, viewing details, managing ratings, favorites, and watchlists, and using your profile.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;-login&#34;&gt;🔐 Login&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://placehold.co/900x500?text=Login+Screen&#34; alt=&#34;Login Page&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;logging-in&#34;&gt;Logging In&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Open the application.&lt;/li&gt;&#xA;&lt;li&gt;Enter your &lt;strong&gt;email&lt;/strong&gt; and &lt;strong&gt;password&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Tap &lt;strong&gt;Login&lt;/strong&gt; to continue.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;registering-a-new-account&#34;&gt;Registering a New Account&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;New users must register through &lt;strong&gt;TMDB&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Tap &lt;strong&gt;Register with TMDB&lt;/strong&gt; to create an account.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;forgot-password&#34;&gt;Forgot Password&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Select &lt;strong&gt;Forgot Password&lt;/strong&gt; to be redirected to TMDB’s password recovery page.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h1 id=&#34;-home-screen&#34;&gt;🏠 Home Screen&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://placehold.co/900x500?text=Home+Screen&#34; alt=&#34;Home Screen&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

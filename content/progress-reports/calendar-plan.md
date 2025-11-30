@@ -1,102 +1,77 @@
-+++
-menus = 'main'
-title = 'Calendar Plan'
-+++
+# Team Project – Feature Timeline
 
-# 🎬 TMDB Movie App Development Plan
+## Week 2
 
-## Weekly Feature Breakdown
-Team: Preston, Cambden, Aj
-
----
-
-# 🗓️ Week 2
-
-### 🔐 Login (Preston) ✅ *Completed*
-- The system must allow login via **email/password**.
-- The system must force users to **register with TMDB**.
-- The system must provide **“forgot password”** functionality (redirect to TMDB).
-
-### 🎨 Design (Cambden)
-- Design the **login page** UI.
+### Login
+- The system must allow login via email/password.
+- The system must force user to register with TMDB.
+- The system must provide “forgot password” functionality (redirect to TMDB).
+- Design login page (Cambden).
 
 ---
 
-# 🗓️ Week 3
+## Week 3
 
-### 🔐 Login (Preston) ✅ *Completed*
-- The system must allow login via **email/password**.
-- The system must force users to **register with TMDB**.
-- The system must provide **“forgot password”** functionality (redirect to TMDB).
+### Login (Preston) – Completed
+- The system must allow login via email/password.
+- The system must force user to register with TMDB.
+- The system must provide “forgot password” functionality (redirect to TMDB).
+- Design login page (Cambden).
 
-### 🎬 Detail Pages (Cambden)
-- Display **title, release date, and synopsis**.
-- Show **cast, crew, and production details**.
-- Display **similar/related movies**.
-- Allow user to **add movie to list**.
-
----
-
-# 🗓️ Week 4
-
-### ⭐ Ratings (Cambden) 🚧 *Incomplete*
-- Users can **rate movies (1–10 scale)**.
-- Ratings must be **editable/removable**.
-- User ratings must be **aggregated into an average score**.
-
-### 💬 Reviews (Aj) ✅ *Completed*
-- Users can **read reviews**.
-- Reviews show **username, timestamp, and rating**.
-- Reviews can be **sorted** (newest, highest rated).
+### Detail Pages (next week) – Cambden
+- Detail pages must display title, release date, synopsis.
+- Must be able to add/remove movie to watchlist and favorites.
 
 ---
 
-# 🗓️ Week 5
+## Week 4
 
-### 🎬 Detail Pages (Cambden)
-- Display **title, release date, synopsis**.
-- Show **cast, crew, and production details**.
-- Display **similar/related movies**.
-- Allow user to **add movie to list**.
+### Ratings
+- Users must be able to rate movies on a 1–10 scale.
+- Ratings must be editable or removable by the user.
+- User ratings must be aggregated into an average score.
 
-### ⭐ Ratings (Cambden)
-- Users can **rate movies (1–10 scale)**.
-- Ratings must be **editable/removable**.
-- Ratings are **averaged** for a total score.
-
----
-
-# 🗓️ Week 6
-
-### 👤 Profiles
-- Users can **create and edit** a profile.
-- Display **watchlist, favorites, and reviews**.
-- Allow **light/dark mode** settings.
-- Users can **log out from all devices**.
-
-### 🔍 Search / Filter
-- Search by **title, keyword, or cast**.
-- Filter by **genre, year, rating, and country**.
-- **Dynamic search** updates results as user types.
-- **Clear filters** to reset default view.
-- Show **recommendations while searching**.
+### Reviews (AJ) – Completed
+- Users must be able to read reviews.
+- Reviews must display username, timestamp, and rating (if provided).
+- Reviews must be sortable (newest, highest rated).
 
 ---
 
-# 🗓️ Week 7
+## Week 5
 
-### 🎥 Watchlist
-- Add/remove movies to **watchlist**.
-- Mark movies as **favorites**.
-- Lists display in **chronological order**.
-- Lists are **editable** (remove or reorder items).
+### Detail Pages
+- Detail pages must display title, release date, synopsis.
+- Must be able to add and remove movies from watchlist and favorites.
 
-### 🤖 Recommendations
-- Generate recommendations based on **ratings and watchlist**.
-- Recommendations **update dynamically** after list changes.
-- Show **at least 10 suggested movies/TV shows**.
+### Profiles
+- Profiles must display a watchlist and favorites.
+- Users must be able to log out.
 
 ---
 
+## Week 6
 
-# Remaning weeks will focus on improving the UI
+### Search/Filter
+- Users must be able to search movies/TV shows by title, keyword, or cast.
+- Filters must support genre, year, rating, and country.
+- Search results must update dynamically as the user types.
+- Users must be able to clear filters and reset to default view.
+
+### Watchlist
+- Users must be able to add/remove movies to their watchlist.
+- Users must be able to mark movies as favorites.
+
+---
+
+## Week 7
+
+### Ratings
+- Users must be able to rate movies on a 1–10 scale.
+- Ratings must be able to add and remove.
+
+### Recommendations
+- Recommendations must display at least 10 suggested movies/TV shows.
+
+### UI Work
+- UI refinements for recommendations.

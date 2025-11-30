@@ -1,6 +1,6 @@
 +++
 menus = 'main'
-title = 'Documentation'
+title = 'Architecture Docs'
 +++
 
 
@@ -24,3 +24,172 @@ We are going to use MVVM Design pattern to make it easier for collaborations, sc
  - I will create another tutorial file on how everything works with the codebase
 
 
+# 🎬 Movie App – Flutter
+
+A Flutter-based movie browsing application that allows users to log in, explore popular movies, open detailed pages, and manage their profile. The app uses MVVM architecture with Provider for state management and integrates with a movie API for real-time data.
+
+---
+
+##  Features
+
+-  **User Login & Logout**
+-  **Browse Popular Movies**
+-  **Search for Movies**
+-  **Movie Detail Page**
+-  **Profile Screen**
+-  **Filter Sheet for Movie Sorting**
+-  **Carousel Slider for Featured Movies**
+
+---
+
+## 🗂️ Project Structure (Architecture)
+
+This project follows **MVVM** (Model–View–ViewModel) with clean folder organization.
+
+```
+lib/
+ ├── data/
+ │    ├── models/         # Movie, User models
+ |    ├──repositories/
+ │    └── services/       # API services
+ ├── view/
+ │    ├── home_screen.dart
+ │    ├── movie_detail_screen.dart
+ │    ├── profile_screen.dart
+ │    └── filter_sheet.dart
+ │    └── review_screen.dart
+ │    └── login_screen.dart
+ ├── view_models/         # HomeViewModel, ReviewViewModel, etc.
+ ├── di/           # GetIt Dependency Injection
+ └── main.dart
+```
+
+**Key Concepts Used:**
+- **Provider** for state management
+- **GetIt** for dependency injection  
+- **MVVM** to separate UI and logic  
+- **HTTP/REST API** integration  
+
+---
+
+## 🛠️ Installation & Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/movie_app.git
+```
+
+2. Install dependencies:
+```bash
+flutter pub get
+```
+
+3.  If your project needs an API key, create:
+```
+lib/.env
+```
+and add:
+```dart
+const apiKey = "YOUR_API_KEY";
+
+4. Run the app:
+```bash
+flutter run
+```
+
+```
+
+---
+
+## 🧪 Testing
+
+### ✔️ Unit Tests
+- ViewModel logic  
+- Widget  
+
+### ✔️ Integration Tests
+- Login to Home Screen
+- Navgation
+- Buttons
+
+Run tests:
+```bash
+flutter test
+```
+```
+
+---
+
+## ✅ Acceptance Tests
+
+### **Scenario 1: Login Success**
+**Given** the app is launched  
+**And** the user is on the Login screen  
+**When** the user enters valid credentials  
+**Then** the app navigates to the **HomeScreen**
+
+---
+
+### **Scenario 2: Invalid Login**
+**Given** the user is on the Login screen  
+**When** invalid credentials are entered  
+**Then** an error message appears  
+**And** the user remains on the Login page  
+
+---
+
+### **Scenario 3: Movie Details Open**
+**Given** the user is on HomeScreen  
+**When** a movie card is tapped  
+**Then** the MovieDetailScreen is shown with info  
+
+---
+
+## 🧰 Technologies Used
+
+- Flutter 3.x  
+- Dart  
+- Provider  
+- HTTP  
+- Carousel Slider  
+- GetIt (if DI used)  
+- TMDB or other movie API  
+
+---
+
+## 🐞 Known Issues / Limitations
+
+- Some API requests may load slowly  
+- Error handling can be improved  
+- Profile editing is minimal
+- UI issues in some size of screen
+
+---
+
+## 🔮 Future Improvements
+
+- Add watchlist & favorites  
+- Implement offline mode with caching  
+- Build improved animations  
+- Add pagination  
+- Add user settings / themes  
+
+---
+
+## 👨‍💻 Members
+
+**Blair**  
+**Aj**
+**Parker**   
+**Cambden** 
+**Preston** 
+
+---
+
+If you want, I can also generate:
+✔ API documentation  
+✔ Class diagram  
+✔ System architecture diagram  
+✔ PDF version of this README  
+
+Just tell me!  

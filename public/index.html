@@ -47,6 +47,8 @@
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Movie App">
+  <meta itemprop="datePublished" content="2025-11-29T14:10:17-05:00">
+  <meta itemprop="dateModified" content="2025-11-29T14:10:17-05:00">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Movie App">
 
@@ -71,19 +73,25 @@
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="/progress-reports/calendar-plan/" title="Calendar Plan page">
-              Calendar Plan
+            <a class="hover-white white-90 no-underline" href="/api-docs/api-docs/" title="Api Docs page">
+              Api Docs
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="/documentation/architecture/" title="Documentation page">
-              Documentation
+            <a class="hover-white white-90 no-underline" href="/documentation/architecture/" title="Architecture Docs page">
+              Architecture Docs
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="/user-manul/user-manual/" title="User Manual page">
+            <a class="hover-white white-90 no-underline" href="/testing-docs/testing-docs/" title="Testing Docs page">
+              Testing Docs
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="/user-manual/user-manual/" title="User Manual page">
               User Manual
             </a>
           </li>
@@ -133,25 +141,91 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/documentation/howtorun/" class="color-inherit dim link">
+          <a href="/progress-reports/calendar-plan/" class="color-inherit dim link">
             
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <h1 id="how-to-run-the-app">How to Run the app</h1>
-<h2 id="instructions-to-run-the-app">Instructions to run the app</h2>
-<ol>
-<li>
-<p>Run in terminal</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>flutter pub get
-</span></span></code></pre></div></li>
-<li>
-<p>At the root of the project create a file called  <code>.env</code> and add your API KEY
-API_KEY=api_key=YOUR API KEY</p>
-</li>
-</ol>
+          <h1 id="team-project--feature-timeline">Team Project – Feature Timeline</h1>
+<h2 id="week-2">Week 2</h2>
+<h3 id="login">Login</h3>
+<ul>
+<li>The system must allow login via email/password.</li>
+<li>The system must force user to register with TMDB.</li>
+<li>The system must provide “forgot password” functionality (redirect to TMDB).</li>
+<li>Design login page (Cambden).</li>
+</ul>
+<hr>
+<h2 id="week-3">Week 3</h2>
+<h3 id="login-preston--completed">Login (Preston) – Completed</h3>
+<ul>
+<li>The system must allow login via email/password.</li>
+<li>The system must force user to register with TMDB.</li>
+<li>The system must provide “forgot password” functionality (redirect to TMDB).</li>
+<li>Design login page (Cambden).</li>
+</ul>
+<h3 id="detail-pages-next-week--cambden">Detail Pages (next week) – Cambden</h3>
+<ul>
+<li>Detail pages must display title, release date, synopsis.</li>
+<li>Must be able to add/remove movie to watchlist and favorites.</li>
+</ul>
+<hr>
+<h2 id="week-4">Week 4</h2>
+<h3 id="ratings">Ratings</h3>
+<ul>
+<li>Users must be able to rate movies on a 1–10 scale.</li>
+<li>Ratings must be editable or removable by the user.</li>
+<li>User ratings must be aggregated into an average score.</li>
+</ul>
+<h3 id="reviews-aj--completed">Reviews (AJ) – Completed</h3>
+<ul>
+<li>Users must be able to read reviews.</li>
+<li>Reviews must display username, timestamp, and rating (if provided).</li>
+<li>Reviews must be sortable (newest, highest rated).</li>
+</ul>
+<hr>
+<h2 id="week-5">Week 5</h2>
+<h3 id="detail-pages">Detail Pages</h3>
+<ul>
+<li>Detail pages must display title, release date, synopsis.</li>
+<li>Must be able to add and remove movies from watchlist and favorites.</li>
+</ul>
+<h3 id="profiles">Profiles</h3>
+<ul>
+<li>Profiles must display a watchlist and favorites.</li>
+<li>Users must be able to log out.</li>
+</ul>
+<hr>
+<h2 id="week-6">Week 6</h2>
+<h3 id="searchfilter">Search/Filter</h3>
+<ul>
+<li>Users must be able to search movies/TV shows by title, keyword, or cast.</li>
+<li>Filters must support genre, year, rating, and country.</li>
+<li>Search results must update dynamically as the user types.</li>
+<li>Users must be able to clear filters and reset to default view.</li>
+</ul>
+<h3 id="watchlist">Watchlist</h3>
+<ul>
+<li>Users must be able to add/remove movies to their watchlist.</li>
+<li>Users must be able to mark movies as favorites.</li>
+</ul>
+<hr>
+<h2 id="week-7">Week 7</h2>
+<h3 id="ratings-1">Ratings</h3>
+<ul>
+<li>Users must be able to rate movies on a 1–10 scale.</li>
+<li>Ratings must be able to add and remove.</li>
+</ul>
+<h3 id="recommendations">Recommendations</h3>
+<ul>
+<li>Recommendations must display at least 10 suggested movies/TV shows.</li>
+</ul>
+<h3 id="ui-work">UI Work</h3>
+<ul>
+<li>UI refinements for recommendations.</li>
+</ul>
         </div>
-        <a href="/documentation/howtorun/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        <a href="/progress-reports/calendar-plan/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
       </div>
     </div>
   </div>
@@ -167,23 +241,14 @@ API_KEY=api_key=YOUR API KEY</p>
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/documentation/architecture/" class="color-inherit dim link">
-            Documentation
+          <a href="/progress-reports/report_week1/" class="color-inherit dim link">
+            HW2 – Grading Rubric (Team Project)
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <h1 id="app-architecture">App Architecture</h1>
-<p><img src="/software-architecture.png" alt="App Architecture"></p>
-<h2 id="overview">Overview</h2>
-<p>We will grab all our movie data in the <a href="https://developer.themoviedb.org/docs/getting-started">Tmdb API</a>. The API already offers login and this means users has the ability to add, remove, update, and rate movies.</p>
-<h2 id="app-design-pattern-mvvm">App Design Pattern (MVVM)</h2>
-<p><img src="https://journaldev.nyc3.cdn.digitaloceanspaces.com/2018/04/android-mvvm-pattern.png" alt="MVVM"></p>
-<p>We are going to use MVVM Design pattern to make it easier for collaborations, scalable, and testing.</p>
-<ul>
-<li>I will create another tutorial file on how everything works with the codebase</li>
-</ul>
+          
         </div>
-        <a href="/documentation/architecture/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        <a href="/progress-reports/report_week1/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
       </div>
     </div>
   </div>

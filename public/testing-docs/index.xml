@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing-Docs on Movie App</title>
+    <link>http://localhost:1313/testing-docs/</link>
+    <description>Recent content in Testing-Docs on Movie App</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Nov 2025 14:43:20 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/testing-docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Testing Docs</title>
+      <link>http://localhost:1313/testing-docs/testing-docs/</link>
+      <pubDate>Thu, 27 Nov 2025 14:43:20 -0500</pubDate>
+      <guid>http://localhost:1313/testing-docs/testing-docs/</guid>
+      <description>&lt;h1 id=&#34;regression-testing&#34;&gt;Regression Testing&lt;/h1&gt;&#xA;&lt;p&gt;Regression testing ensures that new features do not break previously working functionality.&lt;/p&gt;&#xA;&lt;p&gt;For this project, full regression testing was &lt;strong&gt;not implemented&lt;/strong&gt; due to time limitations and sprint priorities.&lt;/p&gt;&#xA;&lt;p&gt;However, the team performed &lt;strong&gt;informal manual checks&lt;/strong&gt; after major features were added, including:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Login still works after UI updates&lt;/li&gt;&#xA;&lt;li&gt;Navigation continues to work&lt;/li&gt;&#xA;&lt;li&gt;Detail pages still load correctly&lt;/li&gt;&#xA;&lt;li&gt;Search and filters still respond as expected&lt;/li&gt;&#xA;&lt;li&gt;Able to add and remove in watchlist and favorites&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Formal automated regression tests (scripts or automated suites) were planned but not executed in this version of the project.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

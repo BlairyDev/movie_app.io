@@ -1,6 +1,5 @@
 +++
 date = '2025-11-27T14:27:02-05:00'
-draft = true
 title = 'Api Docs'
 menus = 'main'
 +++

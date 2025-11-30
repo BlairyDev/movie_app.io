@@ -1,6 +1,5 @@
 +++
 date = '2025-11-27T14:43:20-05:00'
-draft = true
 title = 'Testing Docs'
 menus = 'main'
 +++

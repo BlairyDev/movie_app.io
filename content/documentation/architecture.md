@@ -7,7 +7,7 @@ title = 'Architecture Docs'
 # App Architecture
 
 
-![App Architecture](/software-architecture.png)
+![App Architecture](https://blairydev.github.io/movie_app.io/software-architecture.png)
 
 
 
